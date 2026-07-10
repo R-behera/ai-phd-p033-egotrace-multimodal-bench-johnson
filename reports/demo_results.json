@@ -15,6 +15,46 @@
   "next_step": "Replace seed cases with public/lab visual examples and run one real pretrained baseline.",
   "professor": "Justin Johnson",
   "project_family": "vision",
+  "proposed_method": {
+    "algorithm_id": "P033-Johnson-ComputerVision",
+    "algorithm_name": "JohnsonProgressiveComputerVisionDiagnoseLoop",
+    "core_mechanism": "prioritizes distribution-shift failures with confidence-aware calibration penalties",
+    "decision_rule": "Rank seed cases by vision-specific priority score with Johnson-aligned focus term 'Computer vision'.",
+    "mean_priority_score": 0.4495,
+    "project_family": "vision",
+    "top_cases": [
+      {
+        "action": "add to professor-facing failure gallery",
+        "case_id": "V4",
+        "priority_score": 0.734,
+        "signals": {
+          "confidence_error": 0.85,
+          "correct": false,
+          "shift_type": "domain"
+        }
+      },
+      {
+        "action": "add to professor-facing failure gallery",
+        "case_id": "V2",
+        "priority_score": 0.716,
+        "signals": {
+          "confidence_error": 0.65,
+          "correct": false,
+          "shift_type": "context"
+        }
+      },
+      {
+        "action": "retain as calibration control",
+        "case_id": "V1",
+        "priority_score": 0.188,
+        "signals": {
+          "confidence_error": 0.45,
+          "correct": true,
+          "shift_type": "viewpoint"
+        }
+      }
+    ]
+  },
   "research_area": "Computer vision, vision+language, image generation, 3D",
   "university": "University of Michigan",
   "value_add": "distribution-shift and failure-analysis benchmark for vision/multimodal models"
