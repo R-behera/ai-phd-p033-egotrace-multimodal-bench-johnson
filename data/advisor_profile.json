@@ -1,0 +1,13 @@
+{
+  "professor": "Justin Johnson",
+  "university": "University of Michigan",
+  "program": "Computer Science & Engineering",
+  "research_area": "Computer vision, vision+language, image generation, 3D",
+  "representative_paper": "Perceptual Losses for Real-Time Style Transfer and Super-Resolution; 2016; ECCV",
+  "paper_link": "https://scholar.google.com/scholar?q=Perceptual+Losses+for+Real-Time+Style+Transfer+and+Super-Resolution",
+  "project_family": "vision",
+  "focus": "Computer vision",
+  "value_add_artifact": "distribution-shift and failure-analysis benchmark for vision/multimodal models",
+  "next_step": "Replace seed cases with public/lab visual examples and run one real pretrained baseline.",
+  "generated_for": "professor outreach value-add starter"
+}

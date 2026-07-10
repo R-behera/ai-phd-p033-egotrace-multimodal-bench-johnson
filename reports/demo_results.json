@@ -1,0 +1,21 @@
+{
+  "metrics": {
+    "accuracy": 0.5,
+    "artifact": "distribution-shift failure audit",
+    "mean_calibration_gap": 0.55,
+    "num_cases": 4,
+    "shift_failure_rate": {
+      "annotation": 0.0,
+      "context": 1.0,
+      "domain": 1.0,
+      "viewpoint": 0.0
+    },
+    "worst_shift": "context"
+  },
+  "next_step": "Replace seed cases with public/lab visual examples and run one real pretrained baseline.",
+  "professor": "Justin Johnson",
+  "project_family": "vision",
+  "research_area": "Computer vision, vision+language, image generation, 3D",
+  "university": "University of Michigan",
+  "value_add": "distribution-shift and failure-analysis benchmark for vision/multimodal models"
+}
