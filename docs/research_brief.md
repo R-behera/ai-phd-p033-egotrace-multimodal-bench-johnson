@@ -2,60 +2,36 @@
 
 ## Project Name
 
-EgoTrace Multimodal Bench: Computer vision for Johnson-Aligned Research
+ShiftLens Vision Bench: Computer vision for Johnson-Aligned Research
 
 ## Motivation
 
-This project targets the intersection of **Computer vision, vision+language, image generation, 3D** and PhD-level research readiness. The goal is to produce a publishable-style artifact with a clear claim, reproducible experiments, and an honest account of failures.
+This project targets **Computer vision, vision+language, image generation, 3D** with a concrete, reproducible artifact rather than a vague expression of interest. The goal is to show research taste, useful engineering, and honesty about what has and has not been completed.
 
 ## Hypothesis
 
-A focused system that combines domain-specific inductive bias with rigorous evaluation will outperform generic baselines on reliability, generalization, or interpretability for the advisor-aligned task.
+A focused system that combines domain-specific task design with rigorous baselines and failure analysis can produce a useful lab contribution even before a full publication-scale result exists.
 
-## Core Research Question
+## Proposed Value
 
-Which visual representations stay reliable when scenes, objects, viewpoints, and labels shift away from curated benchmarks?
-
-## Novel Contribution
-
-1. Build a task definition and dataset split that reflects a real weakness in current models.
-2. Add one measurable method or evaluation contribution tied to Justin Johnson's research area.
-3. Report both positive results and failure cases with enough detail for another researcher to reproduce or challenge the claim.
+Build **a robustness and failure-analysis benchmark for vision or vision-language models** focused on **Computer vision**.
 
 ## Data Plan
 
-ImageNet variants, COCO, LVIS, Ego4D, domain adaptation sets, and curated failure cases.
+Build a small curated evaluation suite over 3-5 distribution shifts and compare CLIP/ViT-style baselines against adaptation or calibration variants.
 
-Advisor-specific slice: **Computer vision, vision+language, image generation, 3D**.
+## Baselines And Comparisons
 
-## Baselines
-
-zero-shot CLIP, fine-tuned ViT, self-supervised model, domain adaptation, and test-time adaptation.
-
-## Main Method
-
-Start with the strongest reproducible baseline, then add one explicit contribution: provenance tracking, uncertainty estimation, progress-state modeling, controllable ranking, graph constraints, adaptive stress testing, or domain-prior regularization depending on the final task.
+Use the strongest simple baseline first, then add the proposed contribution only after the baseline is reproducible. The expected comparisons should include standard baselines, one stronger modern baseline, the proposed method or evaluation contribution, and an ablation with the key contribution removed.
 
 ## Evaluation Metrics
 
-shift accuracy, calibration, localization quality, retrieval recall, robustness curves, and failure taxonomy.
-
-## Ablations
-
-- Remove the domain-specific component.
-- Remove uncertainty, verification, or interpretability module if present.
-- Vary training data scale.
-- Evaluate in-domain and out-of-domain splits.
-- Run at least three seeds when stochastic training materially affects results.
+Use metrics appropriate to the area plus reproducibility checks: performance, calibration or uncertainty when relevant, failure slices, runtime/cost, and limitations.
 
 ## Failure Analysis
 
-Maintain a failure bank with input, expected behavior, observed behavior, suspected cause, fix attempted, and whether the fix generalized.
+Maintain a failure bank with input, expected behavior, observed behavior, suspected cause, remediation attempt, and whether the fix generalized.
 
-## Five-Week Milestones
+## Outreach Claim You Can Safely Make
 
-1. Literature map, exact task definition, dataset access, and baseline target.
-2. Dataset pipeline, first baseline, metrics dashboard, and experiment registry.
-3. Main method prototype and initial ablations.
-4. Robustness, OOD, or counterfactual evaluation with failure taxonomy.
-5. Final experiments, paper-style report, reproducibility package, and SOP-ready summary.
+You can say you have prepared a project scaffold and are ready to turn it into a reproducible contribution. Do not claim completed experiments until they exist.
